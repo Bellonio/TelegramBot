@@ -21,7 +21,8 @@ index.php
 | `chat_id` | `int` | Identifier of the user chat with the bot. |
 | `username` | `string` | Identifier of the user (automatically check if the username is memorize in `chat_ids.json` and get his `chat_id`) |
 | `text` | `string` | The text message to send |
-| `photo` | `string` | URL or path to local photo |
+| `photo` | `string` | URL or path to local photo to send |
 
 **Required**: `chat_id` or `username`
+
 **Required**: `text` or `photo`
