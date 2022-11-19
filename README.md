@@ -19,7 +19,7 @@ index.php
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `chat_id` | `int` | Identifier of the user chat with the bot. |
-| `username` | `string` | Identifier of the user (automatically check if the user is memorize in `chat_ids.json` and get his `chat_id`) |
+| `username` | `string` | Identifier of the user (automatically check if the username is memorize in `chat_ids.json` and get his `chat_id`) |
 | `text` | `string` | The text message to send |
 | `photo` | `string` | URL or path to local photo |
 
