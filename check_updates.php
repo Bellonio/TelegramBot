@@ -3,20 +3,21 @@
 	* @author Giulio Bellone <bellonegiulio@gmail.com>
 	* @copyright 2022 Giulio Bellone
 	*
-	* When a person find the bot and lauch it, it send automatically the message
-	*		'/start' to the bot. An API of telegram allow to read all message sent to
+	* When a person finds the bot and lauch it, it sends automatically the message
+	*		'/start' to the bot. The APIs of telegram allow to read all messages sent to
 			the bot with all the details about the telegram user that sent it.
 	*
 	*	In few words this page add the chat_id to the chat_ids' file.
 	*	 (automatically add only new chat_id)
-	*	 (automaticaly clear the updates list by setting the offset (ID) of the message to read)
 	*
 	*	OUTPUT:
-	*	 the page print the list of all the chat id and the new one inserted now.
+	*	 the page print the list of all the chat ids and the new one inserted now.
 	*/
 	
-	//If it isn't the first message sent to the bot, offset will contain the next update id.
-	// When you call the telegram API with the offset, it automatically clear all the update before that one specified
+	/*------------------
+	*	If it isn't the first message sent to the bot, offset will contain the next update id.
+	*	When you call the telegram API with the offset, it automatically clear all the update before that one specified
+	*/
 	$offset = "";
 	if( filesize("last_update_id.txt")>0 ){
 		$f = fopen("last_update_id.txt", "r");
