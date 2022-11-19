@@ -1,0 +1,38 @@
+------- chat_ids.json -------
+
+É un file contente la lista dei chat_id di chi si è unito al bot.
+Nel JSON oltre al chat_id vi è anche l'username in modo da poter riconoscere una chat dall'altra anche tramite utente.
+Esempio di JSON:
+[{"id":677908531,"username":"bellone_giulio","name":"Giulio Bellone"}]
+
+#############################
+
+
+
+----- check_updates.php -----
+
+La pagina che aggiunge automaticamente i chat_id alla lista (solo quelli nuovi ovviamente).
+
+#############################
+
+
+
+--------- index.php ---------
+
+La pagina che effettua la chiamata all'API di telegram per inviare un messaggio o una foto in una singola chat con il bot.
+I parametri in GET passabili sono:
+- chat_id 			(default: mette il primo chat_id registrato)
+- username
+- text
+- photo
+- parse_mode 		(default: 'html')
+
+#############################
+
+
+
+----------- NOTE ------------
+
+C'è da cambiare in index.php e check_updates.php il token del bot.
+
+#############################
